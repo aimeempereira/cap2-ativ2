@@ -95,25 +95,53 @@ ul {
 
 .hero-img {
   width: 100vw;
-  height: auto;
-  margin-top: 2.5rem;
+  height: 70vh;
+  background: url(img/carousel-2.jpg) center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
   z-index: -1;
+}
+.hero-img::after {
+  content: '';
+  width: 100vw;
+  height: 70vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .2);
 }
 
 .hero-text {
   text-align: center;
+  
+  color: white;
   z-index: 2;
 }
 
 .hero-tag {
   text-transform: uppercase;
   font-weight: 500;
+  color: #dedede;
 }
 
 .hero-title {
   font-size: 3rem;
   font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.btn-grande {
+  border-radius: 0%;
+  border-style: none;
+  border: #7AB730;
+  padding: .8rem 1.5rem;
+  background-color: #7AB730;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 @media (max-width:830px) {
@@ -125,8 +153,8 @@ ul {
 
   .hero-img {
     margin-top: 0;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 40vh;
   }
   ul {
     display: none;
