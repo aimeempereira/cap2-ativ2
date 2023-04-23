@@ -25,7 +25,8 @@
     <title>Gulliver Traveller - Sua opção de viagens</title>
   </head>
   <body>
-    <!-- Communication -->
+    <main>
+      <!-- Communication -->
     <div class="communication">
       <div>
         <p>
@@ -40,7 +41,6 @@
         <a href=""><i class="fab fa-youtube"></i></a>
       </ul>
     </div>
-    <main>
       <!-- Navbar -->
       <div class="nav-container">
         <nav class="container">
@@ -57,38 +57,33 @@
           </ul>
         </nav>
       </div>
-
+      
       <!-- Hero -->
-      <div class="hero-img">
-        <div class="hero-text">
-          <h4 class="hero-tag">Pacotes para mochileiros</h4>
-          <h2 class="hero-title">Explore o mundo com pouco</h2>
-          <button class="btn-grande">Reserve</button>
-        </div>
+      <div class="banner-image">
+        <img src="img/carousel-2.jpg" alt="" class="hero-img" />
       </div>
 
       <!-- Filtro de viagem -->
-      <div>
-        <fieldset>
-          <label for="destino" class="visually-hidden"
-            >Destino da sua viagem:</label
-          >
-          <select id="destino" name="destino">
-            <option value="São Paulo">São Paulo</option>
-            <option value="Recife">Recife</option>
-            <option value="Rio de Janeiro">Rio de Janeiro</option>
-            <option value="Vitória">Vitória</option>
-          </select>
+      <div class="banner">
 
-          <label for="Partida" class="visually-hidden">Data de partida:</label>
-          <input type="date" id="partida" name="partida" />
+        <div class="slogan">
+          <h4 class="hero-tag">Pacotes para mochileiros</h4>
+          <h2 class="hero-title">Explore o mundo com pouco</h2>
+        </div>
+        <div>
+          <fieldset class="opcoes">
+            <label for="destino" class="visually-hidden"
+              >Destino da sua viagem:</label
+            >
+            <select id="destino" name="destino">
+              <option value="São Paulo">São Paulo</option>
+              <option value="Recife">Recife</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Vitória">Vitória</option>
+            </select>
 
-          <label for="chegada" class="visually-hidden">Data de chegada:</label>
-          <input type="date" id="chegada" name="chegada" />
-
-          <label for="duracao" class="visually-hidden"
-            >Duração da sua viagem:</label
-          >
+            <label for="duracao" class="visually-hidden"
+            >Duração da sua viagem:</label>
           <select id="duracao" name="duracao">
             <option value="1 dia">1 dia</option>
             <option value="2 dias">2 dias</option>
@@ -96,77 +91,158 @@
             <option value="4 dias mais">4 ou mais dias</option>
           </select>
 
-          <input type="submit" />
-        </fieldset>
+            <label for="Partida" class="visually-hidden">Data de partida:</label>
+            <input type="date" id="partida" name="partida" />
+
+            <label for="chegada" class="visually-hidden">Data de chegada:</label>
+            <input type="date" id="chegada" name="chegada" />
+
+            <input type="submit" class="submit" />
+          </fieldset>
+        </div>
       </div>
-
+      
       <!-- Hospedagem -->
-      <section id="hospedagem">
-        <div class="hospedagem-item">
-          <img src="" alt="" />
-          <p class="hospedagem-destino">São Paulo, SP</p>
-          <p class="hospedagem-distancia">164km de distância</p>
-          <p class="hospedagem-duracao">3 noites</p>
-          <p class="hospedagem-preco">$200 / noite</p>
-          <p class="hospedagem-avaliacao"></p>
-        </div>
+      <section id="pesquisa">
+        <div class="resultado-pesquisa"
+          <div class="hospedagem">
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
 
-        <div class="hospedagem-item">
-          <img src="" alt="" />
-          <p class="hospedagem-destino">São Paulo, SP</p>
-          <p class="hospedagem-distancia">164km de distância</p>
-          <p class="hospedagem-duracao">3 noites</p>
-          <p class="hospedagem-preco">$200 / noite</p>
-          <p class="hospedagem-avaliacao"></p>
-        </div>
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
 
-        <div class="hospedagem-item">
-          <img src="" alt="" />
-          <p class="hospedagem-destino">São Paulo, SP</p>
-          <p class="hospedagem-distancia">164km de distância</p>
-          <p class="hospedagem-duracao">3 noites</p>
-          <p class="hospedagem-preco">$200 / noite</p>
-          <p class="hospedagem-avaliacao"></p>
-        </div>
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
 
-        <div class="hospedagem-item">
-          <img src="" alt="" />
-          <p class="hospedagem-destino">São Paulo, SP</p>
-          <p class="hospedagem-distancia">164km de distância</p>
-          <p class="hospedagem-duracao">3 noites</p>
-          <p class="hospedagem-preco">$200 / noite</p>
-          <p class="hospedagem-avaliacao"></p>
-        </div>
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
 
-        <div class="hospedagem-item">
-          <img src="" alt="" />
-          <p class="hospedagem-destino">São Paulo, SP</p>
-          <p class="hospedagem-distancia">164km de distância</p>
-          <p class="hospedagem-duracao">3 noites</p>
-          <p class="hospedagem-preco">$200 / noite</p>
-          <p class="hospedagem-avaliacao"></p>
-        </div>
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
 
-        <div class="hospedagem-item">
-          <img src="" alt="" />
-          <p class="hospedagem-destino">São Paulo, SP</p>
-          <p class="hospedagem-distancia">164km de distância</p>
-          <p class="hospedagem-duracao">3 noites</p>
-          <p class="hospedagem-preco">$200 / noite</p>
-          <p class="hospedagem-avaliacao"></p>
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
+
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
+
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
+            
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
+
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
+
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
+            
+            <div class="hospedagem-item">
+              <img src="./img/hotel.jpg" alt="" />
+              <h2 class="hospedagem-nome">Nome do Hotel</h3>
+              <p class="hospedagem-destino">São Paulo, SP</p>
+              <p class="hospedagem-distancia">164km de distância</p>
+              <p class="hospedagem-duracao">3 noites</p>
+              <p class="hospedagem-preco">$200 / noite</p>
+              <p class="hospedagem-avaliacao"></p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Chamada para o blog -->
-      <section class="blog-call">
-        <img src="" alt="" />
-        <h1 class="blog-call-title">Gosta de aventura?</h1>
-        <p class="blog-call-description">
-          Conheça os melhores destinos para mochileiros em todo mundo!
-        </p>
+      <section class="blog">
+        <div class="blog-call">
+          <h1 class="blog-call-title">Gosta de aventura?</h1>
+          <p class="blog-call-description">
+            Conheça os melhores destinos para mochileiros em todo mundo!
+          </p>
         <button class="btn-medio">Ver post</button>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="rodape">
+      </div>
+    </footer>
   </body>
 </html>

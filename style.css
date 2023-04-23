@@ -94,54 +94,27 @@ ul {
 }
 
 .hero-img {
-  width: 100vw;
-  height: 70vh;
-  background: url(img/carousel-2.jpg) center;
+  width: 100%;
+  height: 40%;
+  /* margin-top: 2.5rem; */
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2.5rem;
   z-index: -1;
-}
-.hero-img::after {
-  content: '';
-  width: 100vw;
-  height: 70vh;
-  position: absolute;
-  background-color: rgba(0, 0, 0, .2);
+  overflow: hidden;
 }
 
 .hero-text {
   text-align: center;
-  
-  color: white;
   z-index: 2;
 }
 
 .hero-tag {
   text-transform: uppercase;
   font-weight: 500;
-  color: #dedede;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 600;
-  padding-bottom: 1.5rem;
-}
-
-.btn-grande {
-  border-radius: 0%;
-  border-style: none;
-  border: #7AB730;
-  padding: .8rem 1.5rem;
-  background-color: #7AB730;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
 }
 
 @media (max-width:830px) {
@@ -153,8 +126,8 @@ ul {
 
   .hero-img {
     margin-top: 0;
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: auto;
   }
   ul {
     display: none;
@@ -165,4 +138,132 @@ ul {
   .communication {
     display: none;
   }
+}
+
+.banner
+{
+  background-color: white;
+  margin-top: -20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.slogan{  
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.opcoes{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.opcoes input
+{
+  padding: 1.9%;
+  margin-right: 2%;
+  width: 12%;
+}
+
+.opcoes select
+{
+  padding: 2%;
+  margin-right: 2%;
+  width: 15%;
+}
+
+.opcoes .submit
+{
+  padding: 2% !important;
+  width: 12% !important;
+  background-color: green;
+}
+
+.resultado-pesquisa{
+  margin: 5%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hospedagem-item{
+  width: 25%;
+  height: 40%;
+  padding: 3%;
+  margin: 1%;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  margin: 10px 0;
+  font-size: 1.5vw;
+  color: black;
+}
+.hospedagem-item img{
+  width: 90%;
+  height: 35%;
+}
+.hospedagem-nome{
+  margin: 10px 0;
+  font-size: 2vw;
+  font-weight: 900;
+} 
+
+
+.blog-call{
+  margin: 5%;
+  width: 80%;
+  height: 50%;
+  padding: 5%;
+  background-image: url(./img/blog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.blog-call-title{
+  font-size: 4vw;
+}
+.blog-call p{
+  margin: 5% 0;
+ font-size: 2vw;
+}
+.btn-medio{
+  border: 0;
+  font-size: 2vw;
+  background-color: white;
+  color: black;
+  width: 200px;
+  height: 80px;
+}
+
+@media (max-width: 400px){
+  .opcoes input
+{
+  width: 100px;
+  margin-top: 2%;
+}
+
+.opcoes select
+{
+  width: 100px;
+  margin-top: 2%;
+}
+
+.opcoes .submit
+{
+  width: 100px !important;
+  margin-top: 2%;
+}
+.btn-medio{
+  width: 100px;
+  height: 50px;
+}
 }
