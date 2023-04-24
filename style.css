@@ -37,7 +37,7 @@ a:hover:not(.titulo) {
 
 .communication {
   width: 80vw;
-  height:2rem;
+  height: 2rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -151,6 +151,8 @@ ul {
   padding-bottom: 2%;
   border: 1px solid black;
   text-align: center;
+  border: hidden;
+  border-radius: 5px;
 }
 
 .slogan{  
@@ -168,6 +170,9 @@ ul {
   padding: 1.9%;
   margin-right: 2%;
   width: 12%;
+  border: solid 1px black;
+  border-radius: 25px;
+  font-size: 1vw;
 }
 
 .opcoes select
@@ -175,73 +180,94 @@ ul {
   padding: 2%;
   margin-right: 2%;
   width: 15%;
+  border: solid 1px black;
+  border-radius: 25px;
+  font-size: 1vw;
 }
 
 .opcoes .submit
 {
   padding: 2% !important;
   width: 12% !important;
-  background-color: green;
+  background-color: #7AB730;
+  font-family: "Poppins", sans-serif;
+  border-radius: 25px;
+  font-size: 1vw;
+  border: 2px solid #7AB730;
+}
+
+.opcoes .submit:hover {
+  background-color: white;
+  color: #7AB730;
 }
 
 .resultado-pesquisa{
-  margin: 5%;
+  width: 100%;
+  height: 50%;
+}
+.hospedagem{
   width: 90%;
+  margin: 1% 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .hospedagem-item{
-  width: 25%;
-  height: 40%;
-  padding: 3%;
-  margin: 1%;
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  border-radius: 5%;
+  width: 30%;
   background-color: white;
-  margin: 10px 0;
-  font-size: 1.5vw;
+  margin: 1% ;
+  font-size: 1vw;
   color: black;
 }
 .hospedagem-item img{
-  width: 90%;
-  height: 35%;
+  width: 100%;
+  border-radius: 5%;
 }
 .hospedagem-nome{
-  margin: 10px 0;
-  font-size: 2vw;
-  font-weight: 900;
+  font-size: 1.5vw;
+  font-weight: 700;
 } 
+.hospedagem-texto{
+  padding: 3%;
+}
 
+.blog-all{
+  padding: 2%
+}
+.blog-upper{
+  padding-bottom: 10%;
+}
 
 .blog-call{
   margin: 5%;
-  width: 80%;
-  height: 50%;
-  padding: 5%;
+  width: 90%;
+  padding: 1%;
   background-image: url(./img/blog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  border: hidden;
+  border-radius: 25px;
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .blog-call-title{
   font-size: 4vw;
 }
 .blog-call p{
-  margin: 5% 0;
- font-size: 2vw;
+  margin: 2% 0;
+ font-size: 1.5vw;
 }
 .btn-medio{
   border: 0;
-  font-size: 2vw;
+  font-size: 1vw;
+  font-family: "Poppins", sans-serif;
   background-color: white;
   color: black;
-  width: 25%;
+  width: 15%;
   padding: 1em 0;
+  border: hidden;
+  border-radius: 25px;
 }
 
 @media (max-width: 400px){
@@ -249,12 +275,14 @@ ul {
 {
   width: 100px;
   margin-top: 2%;
+  font-size: 2vw;
 }
 
 .opcoes select
 {
   width: 100px;
   margin-top: 2%;
+  font-size: 2vw;
 }
 
 .opcoes .submit
@@ -266,4 +294,10 @@ ul {
   width: 100px;
   height: 50px;
 }
+}
+.copyright{
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
+  text-align: center;
 }
