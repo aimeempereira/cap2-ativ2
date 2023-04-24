@@ -59,7 +59,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 10px 30px;
-    width: 113%;
+    width: 110%;
 }
 .check-form label{
     display: block;
@@ -226,7 +226,6 @@ nav .fa-bars{
     }
     .check-form{
         padding: 10px 30px;
-        margin-left: -13px;
     }
     .check-form div{
         padding: 20px 0;
