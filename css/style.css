@@ -119,7 +119,8 @@ ul {
 
 @media (max-width:830px) {
   .container {
-    width: 100vw;
+    width: 93vw;
+    height: 57%;
     position: relative;
     top: 0;
   }
@@ -139,6 +140,7 @@ ul {
     display: none;
   }
 }
+
 
 .banner
 {
@@ -230,6 +232,14 @@ ul {
 } 
 .hospedagem-texto{
   padding: 3%;
+}
+@media (max-width:830px){
+  .hospedagem-item{
+    width: 240px;
+  }
+  .hospedagem{
+    justify-content: center;
+  }
 }
 
 .blog-all{
