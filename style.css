@@ -240,8 +240,8 @@ ul {
   font-size: 2vw;
   background-color: white;
   color: black;
-  width: 200px;
-  height: 80px;
+  width: 25%;
+  padding: 1em 0;
 }
 
 @media (max-width: 400px){
