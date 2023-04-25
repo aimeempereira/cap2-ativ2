@@ -100,7 +100,7 @@ ul {
 .hero-img {
   width: 100vw;
   height: 70vh;
-  background: url('img/carousel-2.jpg') center;
+  background: url('/img/carousel-2.jpg') center;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -289,7 +289,7 @@ section {
   margin: 5% auto;
   width: 90%;
   padding: 2rem;
-  background-image: url('img/blog.jpg');
+  background-image: url('/img/blog.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: .4rem;
