@@ -18,30 +18,30 @@
       rel="stylesheet"
     />
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Gulliver Traveller - Sua opção de viagens</title>
   </head>
   <body>
     <main class="wrapper">
       <header>
         <!-- Communication -->
-      <div class="communication">
-        <div>
-          <p>
-            <i class="fab fa-whatsapp"></i> (+55) 11 91234-5678 |
-            <i class="fas fa-envelope"></i> sac@gullivertraveller.com
-          </p>
-        </div>
+        <div class="communication">
+          <div>
+            <p>
+              <i class="fab fa-whatsapp"></i> (+55) 11 91234-5678 |
+              <i class="fas fa-envelope"></i> sac@gullivertraveller.com
+            </p>
+          </div>
 
-        <ul>
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-youtube"></i></a>
-        </ul>
-      </div>
+          <ul>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </ul>
+        </div>
         <!-- Navbar -->
         <div class="nav-container">
           <nav class="container">
@@ -58,93 +58,122 @@
             </ul>
           </nav>
         </div>
-        
+
         <!-- Hero -->
-        <div class="banner-image">
-          <img src="./img/carousel-2.jpg" alt="" class="hero-img" />
+        <div class="hero-img">
+          <div class="hero-text">
+            <h4 class="hero-tag">Pacotes para mochileiros</h4>
+            <h2 class="hero-title">Explore o mundo com pouco</h2>
+            <button type="submit" class="btn-grande">Reserve</button>
+          </div>
         </div>
       </header>
 
       <!-- Filtro de viagem -->
       <div class="banner">
-
-        <div class="slogan">
-          <h4 class="hero-tag">Pacotes para mochileiros</h4>
-          <h2 class="hero-title">Explore o mundo com pouco</h2>
-        </div>
-        <div>
-          <form action="">
-            <fieldset class="opcoes">
-              <label for="destino" class="visually-hidden">Destino da sua viagem:</label>
-              <select id="destino" name="destino">
-                <option value="São Paulo">São Paulo</option>
-                <option value="Recife">Recife</option>
-                <option value="Rio de Janeiro">Rio de Janeiro</option>
-                <option value="Vitória">Vitória</option>
-              </select>
-              <label for="duracao" class="visually-hidden">Duração da sua viagem:</label>
-              <select id="duracao" name="duracao">
-                <option value="1 dia">1 dia</option>
-                <option value="2 dias">2 dias</option>
-                <option value="3 dias">3 dias</option>
-                <option value="4 dias mais">4 ou mais dias</option>
-              </select>
-              <label for="Partida" class="visually-hidden">Data de partida:</label>
-              <input type="date" id="partida" name="partida" />
-              <label for="chegada" class="visually-hidden">Data de chegada:</label>
-              <input type="date" id="chegada" name="chegada" />
-              <input type="submit" class="submit" />
-            </fieldset>
-          </form>
-        </div>
+        <form action="">
+          <fieldset class="opcoes">
+            <label for="destino" class="visually-hidden"
+              >Destino da sua viagem:</label
+            >
+            <select id="destino" name="destino">
+              <option value="São Paulo">São Paulo</option>
+              <option value="Recife">Recife</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Vitória">Vitória</option>
+            </select>
+            <label for="duracao" class="visually-hidden"
+              >Duração da sua viagem:</label
+            >
+            <select id="duracao" name="duracao">
+              <option value="1 dia">1 dia</option>
+              <option value="2 dias">2 dias</option>
+              <option value="3 dias">3 dias</option>
+              <option value="4 dias mais">4 ou mais dias</option>
+            </select>
+            <label for="Partida" class="visually-hidden"
+              >Data de partida:</label
+            >
+            <input type="date" id="partida" name="partida" />
+            <label for="chegada" class="visually-hidden"
+              >Data de chegada:</label
+            >
+            <input type="date" id="chegada" name="chegada" />
+            <button class="submit" type="submit">Enviar</button>
+          </fieldset>
+        </form>
       </div>
-      
+
       <!-- Hospedagem -->
       <section id="pesquisa">
         <div class="resultado-pesquisa">
           <div class="hospedagem">
             <div class="hospedagem-item">
-              <div class="hospedagem-imagem"><a href="./exphotel.html"><img src="./img/house-1.png" alt="Exemplo hotel"></a></div>
-              <div class="hospedagem-texto">
-                <h2 class="hospedagem-nome"><a href="./exphotel.html">Exemplo Hotel</a></h2>
-                <p class="hospedagem-destino">São Sebastião, SP</p>
-                <p class="hospedagem-distancia">350km de distância</p>
-                <p class="hospedagem-duracao">3 noites</p>
-                <p class="hospedagem-preco">$200 / noite</p>
-                <p class="hospedagem-avaliacao">4,5 <i class="fa-solid fa-star"></i></p>
+              <div class="hospedagem-imagem">
+                <img src="./img/hotel.jpg" alt="" />
               </div>
-            </div>
-            <div class="hospedagem-item">
-              <div class="hospedagem-imagem"><img src="./img/hotel.jpg" alt=""></div>
               <div class="hospedagem-texto">
                 <h2 class="hospedagem-nome">Nome do Hotel</h2>
                 <p class="hospedagem-destino">São Paulo, SP</p>
-                <p class="hospedagem-distancia">164km de distância</p>
+                <p class="hospedagem-distancia">
+                  <i class="fas fa-map-marker-alt"></i> 164km de distância
+                </p>
                 <p class="hospedagem-duracao">3 noites</p>
-                <p class="hospedagem-preco">$200 / noite</p>
-                <p class="hospedagem-avaliacao">5,0  <i class="fa-solid fa-star"></i></p>
+                <p class="hospedagem-preco">$200 <span>/ noite</span></p>
+                <p class="hospedagem-avaliacao">
+                  5,0 <i class="fa-solid fa-star"></i>
+                </p>
               </div>
             </div>
             <div class="hospedagem-item">
-              <div class="hospedagem-imagem"><img src="./img/hotel.jpg" alt=""></div>
+              <div class="hospedagem-imagem">
+                <img src="./img/hotel.jpg" alt="" />
+              </div>
               <div class="hospedagem-texto">
                 <h2 class="hospedagem-nome">Nome do Hotel</h2>
                 <p class="hospedagem-destino">São Paulo, SP</p>
-                <p class="hospedagem-distancia">164km de distância</p>
+                <p class="hospedagem-distancia">
+                  <i class="fas fa-map-marker-alt"></i> 164km de distância
+                </p>
                 <p class="hospedagem-duracao">3 noites</p>
-                <p class="hospedagem-preco">$200 / noite</p>
-                <p class="hospedagem-avaliacao">5,0  <i class="fa-solid fa-star"></i></p>
+                <p class="hospedagem-preco">$200 <span>/ noite</span></p>
+                <p class="hospedagem-avaliacao">
+                  5,0 <i class="fa-solid fa-star"></i>
+                </p>
               </div>
             </div>
             <div class="hospedagem-item">
-              <div class="hospedagem-imagem"><img src="./img/hotel.jpg" alt=""></div>
+              <div class="hospedagem-imagem">
+                <img src="./img/hotel.jpg" alt="" />
+              </div>
               <div class="hospedagem-texto">
                 <h2 class="hospedagem-nome">Nome do Hotel</h2>
                 <p class="hospedagem-destino">São Paulo, SP</p>
-                <p class="hospedagem-distancia">164km de distância</p>
+                <p class="hospedagem-distancia">
+                  <i class="fas fa-map-marker-alt"></i> 164km de distância
+                </p>
                 <p class="hospedagem-duracao">3 noites</p>
-                <p class="hospedagem-preco">$200 / noite</p>
-                <p class="hospedagem-avaliacao">5,0  <i class="fa-solid fa-star"></i></p>
+                <p class="hospedagem-preco">$200 <span>/ noite</span></p>
+                <p class="hospedagem-avaliacao">
+                  5,0 <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+            <div class="hospedagem-item">
+              <div class="hospedagem-imagem">
+                <img src="./img/hotel.jpg" alt="" />
+              </div>
+              <div class="hospedagem-texto">
+                <h2 class="hospedagem-nome">Nome do Hotel</h2>
+                <p class="hospedagem-destino">São Paulo, SP</p>
+                <p class="hospedagem-distancia">
+                  <i class="fas fa-map-marker-alt"></i> 164km de distância
+                </p>
+                <p class="hospedagem-duracao">3 noites</p>
+                <p class="hospedagem-preco">$200 <span>/ noite</span></p>
+                <p class="hospedagem-avaliacao">
+                  5,0 <i class="fa-solid fa-star"></i>
+                </p>
               </div>
             </div>
           </div>
@@ -154,23 +183,22 @@
       <!-- Chamada para o blog -->
       <section class="blog">
         <div class="blog-call">
-         <div class="blog-all">
-           <div class="blog-upper">
+          <div class="blog-all">
+            <div class="blog-upper">
               <p>Blog</p>
-           </div>
-           <div class="blog-bottom">
+            </div>
+            <div class="blog-bottom">
               <h1 class="blog-call-title">Gosta de aventura?</h1>
               <p class="blog-call-description">
                 Conheça os melhores destinos para mochileiros em todo mundo!
               </p>
               <form action="" method="get" target="_blank">
-                <button class="btn-medio" type="submit">Ver post</button>
+                <button class="btn-grande" type="submit">Ver post</button>
               </form>
             </div>
           </div>
         </div>
       </section>
-      <!-- Rodapé -->
       <footer>
         <div class="copyright">
           <p>All Rights Reserved. © 2023</p>
